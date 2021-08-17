@@ -1,4 +1,8 @@
+from datetime import datetime
+
 class Pessoa:
+    ano_atual =int(datetime.strftime(datetime.now(), '%Y')
+) 
     def __init__(self,nome,idade,comendo=False,falando=False):
         self.nome = nome
         self.idade = idade
@@ -38,3 +42,6 @@ class Pessoa:
             return
         print(f"{self.nome} parou de falar: {self.fala}")
         self.fala = False
+
+    def get_ano_nascimento(self):
+       return self.ano_atual - self.idade

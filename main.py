@@ -8,6 +8,6 @@ pessoa1.parar_comer()
 pessoa1.comer('Laranja')
 pessoa2.fala("Hello, world!")
 pessoa2.parar_falar()
-    
+pessoa1.get_ano_nascimento()
 
         
